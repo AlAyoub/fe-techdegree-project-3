@@ -113,6 +113,13 @@ input::checkbox {
     margin-top: 10px;
 }
 
+
+.input:focus {
+    outline: none !important;
+    border:1px solid red;
+    box-shadow: 0 0 10px #719ECE;
+}
+
 select {
     color: #c2c2c2;
     padding-left: 12px;
@@ -133,4 +140,8 @@ label {
 
 footer {
     margin-bottom: 180px; 
+}
+
+input {
+    border-color: red;
 }
