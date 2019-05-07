@@ -109,6 +109,10 @@ input::placeholder  {
 
 }
 
+input::checkbox {
+    margin-top: 10px;
+}
+
 select {
     color: #c2c2c2;
     padding-left: 12px;
@@ -125,4 +129,8 @@ label {
     font-style: italic;
     text-align: center;
     margin-top: 15px;
+}
+
+footer {
+    margin-bottom: 180px; 
 }

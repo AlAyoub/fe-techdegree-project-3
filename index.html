@@ -96,7 +96,8 @@
 
             <hr id="solid-gray">
 
-            <h4 class="left-heading">Newsletter</h4>
+            <fieldset>
+                    <legend><h4 class="left-heading">Newsletter</h4></legend>
             <p id="newsletter-text">
                 Select the newsletters you would like to recieve
             </p>
@@ -109,18 +110,27 @@
             <br>
             <input type="checkbox" id="javascriptnews" value="recieve_javascript_news" name="user_checkbox_javascript">
             <label for="javascriptnews">JavaScript News</label>
-
-
-
+            <br>
+            <br>         
             <p id="newsletter-text">
                 Newsletter format
             </p>
+            <input type="radio" id="format-html" value="format-html" name="user_newsletter_format">
+            <label for="format-html">HTML</label>
+            <br>
+            <input type="radio" id="format-text" value="format-text" name="user_newsletter_format">
+            <label for="format-text">Plain Text</label>
+            <br>
+            <br>  
             <label for="comment">Other topics you'd like to hear about</label>
             <textarea id="comment"></textarea>
             <button type="submit">Sign Up</button>
+        </fieldset>
         </form>
+        <footer>
+                <p id="footer-text">Copyright The Code Review</p>
+        </footer>
 
-        <p id="footer-text">Copyright The Code Review</p>
 
 
 
