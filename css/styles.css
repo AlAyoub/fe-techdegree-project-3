@@ -31,6 +31,11 @@ h4 {
     text-align: center;
 }
 
+
+fieldset {
+    border: 0;
+}
+
 #description-text {
     color: #c7c7c7;
     font-size: .9em;
@@ -47,7 +52,7 @@ h4 {
     display: block;
 }
 
-input {
+.input-fields, select {
     background-color: #EFF0F1;
     width: 100%;
     height: 35px;
@@ -90,4 +95,34 @@ button {
     height: 50px;
     color: white;
     border-radius: 5px;
+}
+
+#zip {
+    width: 50%;
+}
+
+input::placeholder  {
+    text-align: right;
+    font-style: italic;
+    color: #c2c2c2;
+    padding-right: 12px;
+
+}
+
+select {
+    color: #c2c2c2;
+    padding-left: 12px;
+}
+
+label {
+    color: #c7c7c7;
+    font-size: .8em;
+}
+
+#footer-text {
+    color: #c7c7c7;
+    font-size: .7em;
+    font-style: italic;
+    text-align: center;
+    margin-top: 15px;
 }
