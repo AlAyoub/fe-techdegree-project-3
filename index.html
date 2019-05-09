@@ -11,23 +11,34 @@
 </head>
 
 <body>
+    <!-- Header -->
+
     <header>
         <h3>THE CODE REVIEW</h3>
     </header>
+
+    <!-- Sign Up Heading & Paragrpagh -->
+
     <div class="wrapper">
         <h4>Signup for our newsletter</h4>
         <p id="description-text">Get the latest news on how your code is doing right in your inbox</p>
         <br>
         <hr id="solid-black">
-        <hr id="solid-gray">
+        <hr class="solid-gray">
 
-
+        <!-- Form -->
 
         <form action="index.html" method="post">
             <fieldset>
+
+                <!-- Form Contact Section -->
+
                 <legend>
-                    <h4 class="left-heading">Contact Information</h4>
+                    Contact Information
                 </legend>
+
+                <!-- Form Labels and Fields -->
+
                 <ul class="container">
                     <li class="row">
                         <label for="name" class="col-1">Full Name</label>
@@ -113,46 +124,62 @@
                         <input type="number" id="zip" name="user_zip" class="input-fields zip-col-2">
                     </li>
                 </ul>
-    </fieldset>
+            </fieldset>
 
-    <hr id="solid-gray">
+            <hr class="solid-gray">
 
-    <fieldset>
-        <legend>
-            <h4 class="left-heading">Newsletter</h4>
-        </legend>
-        <p id="newsletter-text">
-            Select the newsletters you would like to recieve
-        </p>
+            <!-- Form Newsletter Section -->
 
-        <input type="checkbox" id="htmlnews" value="recieve_html_news" name="user_checkbox">
-        <label for="htmlnews">HTML News</label>
-        <br>
-        <input type="checkbox" id="cssnews" value="recieve_css_news" name="user_checkbox">
-        <label for="cssnews">CSS News</label>
-        <br>
-        <input type="checkbox" id="javascriptnews" value="recieve_javascript_news" name="user_checkbox">
-        <label for="javascriptnews">JavaScript News</label>
-        <br>
-        <br>
-        <p id="newsletter-text">
-            Newsletter format
-        </p>
-        <input type="radio" id="format-html" value="format-html" name="user_newsletter_format">
-        <label for="format-html">HTML</label>
-        <br>
-        <input type="radio" id="format-text" value="format-text" name="user_newsletter_format">
-        <label for="format-text">Plain Text</label>
-        <br>
-        <br>
-        <label for="comment">Other topics you'd like to hear about</label>
-        <textarea id="comment" name="user_comment"></textarea>
-        <button type="submit">Sign Up</button>
-    </fieldset>
-    </form>
-    <footer>
-        <p id="footer-text">Copyright The Code Review</p>
-    </footer>
+            <fieldset>
+                <legend>
+                    Newsletter
+                </legend>
+                <p class="newsletter-text">
+                    Select the newsletters you would like to recieve
+                </p>
+
+                <!-- Form Newsletter Checkboxes -->
+
+                <input type="checkbox" id="htmlnews" value="recieve_html_news" name="user_checkbox">
+                <label for="htmlnews">HTML News</label>
+                <br>
+                <input type="checkbox" id="cssnews" value="recieve_css_news" name="user_checkbox">
+                <label for="cssnews">CSS News</label>
+                <br>
+                <input type="checkbox" id="javascriptnews" value="recieve_javascript_news" name="user_checkbox">
+                <label for="javascriptnews">JavaScript News</label>
+                <br>
+                <br>
+
+                <!-- Form Newsletter Radio Buttons -->
+
+                <p class="newsletter-text">
+                    Newsletter format
+                </p>
+                <input type="radio" id="format-html" value="format-html" name="user_newsletter_format">
+                <label for="format-html">HTML</label>
+                <br>
+                <input type="radio" id="format-text" value="format-text" name="user_newsletter_format">
+                <label for="format-text">Plain Text</label>
+                <br>
+                <br>
+
+                <!-- Form Comments Section -->
+
+                <label for="comment">Other topics you'd like to hear about</label>
+                <textarea id="comment" name="user_comment"></textarea>
+
+                <!-- Submit Button -->
+
+                <button type="submit">Sign Up</button>
+            </fieldset>
+        </form>
+
+        <!-- Footer -->
+
+        <footer>
+            <p id="footer-text">Copyright The Code Review</p>
+        </footer>
 
     </div>
 </body>
