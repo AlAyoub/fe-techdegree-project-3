@@ -101,6 +101,10 @@ button {
     width: 50%;
 }
 
+input {
+    text-indent: 10px;
+}
+
 input::placeholder  {
     text-align: right;
     font-style: italic;
@@ -114,10 +118,10 @@ input::checkbox {
 }
 
 
-.input:focus {
-    outline: none !important;
-    border:1px solid red;
-    box-shadow: 0 0 10px #719ECE;
+*:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgb(22, 28, 34);
+    
 }
 
 select {
@@ -142,8 +146,9 @@ footer {
     margin-bottom: 180px; 
 }
 
-input {
-    border-color: red;
+.container {
+    list-style: none;
+    padding: 0;
 }
 
 
@@ -152,5 +157,29 @@ input {
     .wrapper {
         width: 60%;
     }
+
+    .row {
+        display: flex;
+        justify-content: flex-end;
+        padding: .5em;
+    }
+
+    .col-1 {
+        flex: 1;
+        padding: 1.5em 1em .5em 0;
+        align-content: center;
+    }
+
+    .col-2 {
+        flex: 2;
+    }
+
+    #zip {
+        flex-grow: .5;
+        border: solid red 3px;
+        justify-content: flex-start;
+    }
+
+
 }
 
